@@ -8,7 +8,7 @@
 
 <meta name="author" content="Laboratório de Física">
 
-<title>Título do Roteiro</title>
+<title>Pêndulo Simples</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -31,7 +31,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 1em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -64,7 +63,7 @@ div.csl-indent {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-6ac2aec46ad7f46b16024ee4409aa65c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -135,13 +134,13 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="titulo-do-roteiro.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="https://uftlabfis.pythonanywhere.com/file/02_mruv_v2020_01.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Outro roteiro</a></li></ul></div></div>
+    <div class="quarto-other-links"><h2>Baixar Material</h2><ul><li><a href="pendulo-simples.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do Experimento</a></li><li><a href="https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Papel milimetrado</a></li><li><a href="assets/alternatives/pendulo-simples-prof-heverton.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i>Roteiro do prof. Heverton</a></li></ul></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Título do Roteiro</h1>
+<h1 class="title">Pêndulo Simples</h1>
 </div>
 
 
@@ -165,7 +164,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Última atualização</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">15 de setembro de 2026</p>
+      <p class="date">2 de outubro de 2026</p>
     </div>
   </div>
   
@@ -179,12 +178,33 @@ window.Quarto = {
 
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
-<p>Apresente brevemente os conceitos físicos relacionados à atividade, destacando os princípios e fenômenos que serão investigados. Contextualize o experimento e sua relevância para a compreensão do conteúdo, podendo incluir as principais equações ou relações teóricas necessárias à análise dos resultados. O parágrafo seguinte mostra um exemplo.</p>
-<p>Conforme <span class="citation" data-cites="Halliday1">Halliday; Resnick; Walker (<a href="#ref-Halliday1" role="doc-biblioref">2016</a>)</span>, <em>energia cinética</em> é a energia associada ao movimento de um corpo. Quando uma força resultante realiza trabalho sobre um corpo, sua velocidade pode ser alterada e, consequentemente, sua energia cinética também se modifica. Essa relação é expressa pelo teorema trabalho–energia cinética, segundo o qual o trabalho realizado pela força resultante sobre um corpo é igual à variação de sua energia cinética. Para um corpo de massa (<span class="math inline">\(m\)</span>) que se move com velocidade (<span class="math inline">\(v\)</span>), a energia cinética é dada por</p>
+<p>O pêndulo simples constitui um sistema físico fundamental para o estudo de movimentos oscilatórios, pois permite investigar de forma relativamente simples conceitos como força restauradora, período, frequência e movimento harmônico simples. Além disso, sua relação entre o período de oscilação e o comprimento do fio possibilita a determinação experimental da aceleração da gravidade, tornando-o um sistema de grande importância em atividades experimentais de Física.</p>
+<p>Seja uma massa <span class="math inline">\(m\)</span>, considerada puntiforme, suspensa por um fio de comprimento (<span class="math inline">\(l\)</span>), inextensível e de massa desprezível. Durante a oscilação, observamos duas forças atuando sobre a massa <span class="math inline">\(m\)</span>: a força peso <span class="math inline">\(\left(\vec{P}\right)\)</span>) e a força de tensão <span class="math inline">\(\left(\vec{T}\right)\)</span>) do fio. A força peso pode ser decomposta em duas componentes: uma tangencial à trajetória da massa, responsável por gerar o movimento oscilatório, e outra radial, que atua na direção do fio. A componente radial contribui para a aceleração centrípeta da massa<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, enquanto a componente tangencial é responsável por sua aceleração ao longo da trajetória. A componente tangencial da força peso constitui a força restauradora <span class="math inline">\(\left(\vec{F_r}\right)\)</span>, pois atua no sentido de retornar a massa à posição de equilíbrio. Essa força é dada por:</p>
+<p><span id="eq-forca-restauradora"><span class="math display">\[
+  F_R = - m g \text{ sen } \theta
+\tag{1}\]</span></span></p>
+<p>Como essa força não é diretamente proporcional ao deslocamento angular (<span class="math inline">\(\theta\)</span>), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação (<span class="math inline">\(\text{sen }\theta\approx\theta\)</span>)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, com (<span class="math inline">\(\theta\)</span>) expresso em radianos. Nesse caso,</p>
 <p><span class="math display">\[
-K = \dfrac{1}{2} m v^2
+F_r = -mg \theta
 \]</span></p>
-<p>Utilize imagens para complementar a explicação dos conceitos e procedimentos, priorizando esquemas, diagramas e fotografias que facilitem a compreensão do experimento. Toda imagem deve apresentar legenda e, quando necessário, identificar seus principais elementos. No texto, referencie a imagem utilizada.</p>
+<p>Aplicando a Segunda Lei de Newtone considerando que a aceleração tangencial está relacionada à aceleração angular por <span class="math inline">\(a = l \alpha\)</span>, obtém-se:</p>
+<p><span class="math display">\[
+m l \alpha = -mg \theta \Rightarrow \alpha = -\dfrac{g}{l} \theta
+\]</span></p>
+<p>Como <span class="math inline">\(\alpha = \dfrac{d^2 \theta}{d t^2}\)</span>, resulta:</p>
+<p><span id="eq-edo-pendulo-simples"><span class="math display">\[
+\dfrac{d^2 \theta}{d t^2} = -\dfrac{g}{l} \theta
+\tag{2}\]</span></span></p>
+<p>Essa equação possui a mesma forma da equação diferencial do movimento harmônico simples. Portanto, a frequência angular do movimento é dada por</p>
+<p><span id="eq-freq-pendulo-simples"><span class="math display">\[
+  \omega = \sqrt{\dfrac{g}{l}}
+\tag{3}\]</span></span></p>
+<p>Como <span class="math inline">\(\omega = \dfrac{2 \pi}{T}\)</span>, o período de oscilação do pêndulo simples pode ser expressp por:</p>
+<p><span id="eq-periodo-pendulo-simples"><span class="math display">\[
+  T = 2 \pi \sqrt{\dfrac{l}{g}}
+\tag{4}\]</span></span></p>
+<p>Essa expressão é válida para pequenas amplitudes e mostra que, nessas condições, o período depende do comprimento do pêndulo e da aceleração da gravidade, mas não depende da massa do corpo oscilante.</p>
+<p>Neste experimento, será investigada a dependência do período de oscilação <span class="math inline">\(T\)</span> com o comprimento <span class="math inline">\(l\)</span> do pêndulo.</p>
 <p>Por exemplo, a <a href="#fig-labfis-logo" class="quarto-xref">Figura&nbsp;1</a> mostra o logo do Laboratório de Física.</p>
 <div id="fig-labfis-logo" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig figure">
@@ -202,37 +222,41 @@ Figura&nbsp;1: Logo do Labfis
 </section>
 <section id="objetivos" class="level2">
 <h2 data-anchor-id="objetivos">Objetivos</h2>
-<p>Apresente de forma clara e objetiva o que se pretende alcançar com a atividade experimental, utilizando verbos de ação como</p>
 <ol type="1">
-<li>Investigar</li>
-<li>Analisar</li>
-<li>Determinar</li>
-<li>Verificar</li>
-<li>Compreender</li>
+<li>Verificar experimentalmente a relação entre o período de oscilação e o comprimento de um pêndulo simples.</li>
+<li>Comparar os resultados experimentais com o modelo teórico do pêndulo simples para pequenas amplitudes.</li>
 </ol>
 </section>
 <section id="material-necessário" class="level2">
 <h2 data-anchor-id="material-necessário">Material necessário</h2>
-<p>Liste todos os materiais, equipamentos e instrumentos que serão utilizados na atividade experimental, de forma organizada e objetiva.</p>
 <ul>
-<li>Balança;</li>
-<li>Cronômetro;</li>
-<li>Paquímetro;</li>
-<li>Trilho de baixo atrito.</li>
+<li>Suporte universal;</li>
+<li>Fio inextensível;</li>
+<li>Corpo pendular;</li>
+<li>Régua ou trena;</li>
+<li>Cronômetro.</li>
 </ul>
 </section>
 <section id="referências" class="level2">
 <h2 data-anchor-id="referências">Referências</h2>
-<div id="refs" class="references csl-bib-body" data-entry-spacing="1" role="list">
-<div id="ref-Halliday1" class="csl-entry" role="listitem">
-HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica</strong>. 10. ed. Rio de Janeiro: LTC, 2016. v. 1
-</div>
+<div id="refs" role="list">
+
 </div>
 
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuso</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas de rodapé</h2>
+
+<ol>
+<li id="fn1"><p>A aceleração centrípeta é a aceleração que mantém um corpo em movimento circular, direcionada para o centro da trajetória.</p>
+<p><span class="math display">\[
+  T - m g \text{ cos } \theta = \dfrac{mv^2}{2}
+\]</span><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Para <span class="math inline">\(\theta \approx 15°\)</span>, o diferença percentual entre o ângulo <span class="math inline">\(\theta\)</span> (em rad) e <span class="math inline">\(\text{sen } \theta\)</span> é aproximadamente igual a <span class="math inline">\(1,1\%\)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuso</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.pt">CC BY-SA 4.0</a></div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
@@ -299,7 +323,7 @@ HALLIDAY, D.; RESNICK, R.; WALKER, J. <strong>Fundamentos de Física: Mecânica<
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/costandrad\.github\.io\/uftlabfis-roteiro-web-template\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
