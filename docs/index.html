@@ -179,13 +179,31 @@ window.Quarto = {
 <section id="introdução" class="level2">
 <h2 data-anchor-id="introdução">Introdução</h2>
 <p>O pêndulo simples constitui um sistema físico fundamental para o estudo de movimentos oscilatórios, pois permite investigar de forma relativamente simples conceitos como força restauradora, período, frequência e movimento harmônico simples. Além disso, sua relação entre o período de oscilação e o comprimento do fio possibilita a determinação experimental da aceleração da gravidade, tornando-o um sistema de grande importância em atividades experimentais de Física.</p>
-<p>Seja uma massa <span class="math inline">\(m\)</span>, considerada puntiforme, suspensa por um fio de comprimento (<span class="math inline">\(l\)</span>), inextensível e de massa desprezível. Durante a oscilação, observamos duas forças atuando sobre a massa <span class="math inline">\(m\)</span>: a força peso <span class="math inline">\(\left(\vec{P}\right)\)</span>) e a força de tensão <span class="math inline">\(\left(\vec{T}\right)\)</span>) do fio. A força peso pode ser decomposta em duas componentes: uma tangencial à trajetória da massa, responsável por gerar o movimento oscilatório, e outra radial, que atua na direção do fio. A componente radial contribui para a aceleração centrípeta da massa<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, enquanto a componente tangencial é responsável por sua aceleração ao longo da trajetória. A componente tangencial da força peso constitui a força restauradora <span class="math inline">\(\left(\vec{F_r}\right)\)</span>, pois atua no sentido de retornar a massa à posição de equilíbrio. Essa força é dada por:</p>
+<div id="fig-pendulo" class="quarto-float quarto-figure quarto-figure-center">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-pendulo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;1
+</figcaption>
+<div aria-describedby="fig-pendulo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<figcaption>Forças atuantes no pêndulo pimples</figcaption>
+<p><img src="assets/images/typst/pendulo-simples.svg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<div style="text-align: center;">
+<p><strong>Fonte:</strong> Labfis (2026)</p>
+</div>
+</div>
+</figure>
+</div>
+<p>Seja uma massa <span class="math inline">\(m\)</span>, considerada puntiforme, suspensa por um fio de comprimento (<span class="math inline">\(l\)</span>), inextensível e de massa desprezível. Durante a oscilação, observamos duas forças atuando sobre a massa <span class="math inline">\(m\)</span>: a força peso <span class="math inline">\(\left(\vec{P}\right)\)</span>) e a força de tensão <span class="math inline">\(\left(\vec{T}\right)\)</span>) do fio. A força peso pode ser decomposta em duas componentes: uma tangencial à trajetória da massa, responsável por gerar o movimento oscilatório, e outra radial, que atua na direção do fio. A componente radial contribui para a aceleração centrípeta da massa<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, enquanto a componente tangencial é responsável por sua aceleração ao longo da trajetória. A componente tangencial da força peso constitui a força restauradora <span class="math inline">\(\left(\vec{P_\perp}\right)\)</span>, pois atua no sentido de retornar a massa à posição de equilíbrio. Essa força é dada por:</p>
 <p><span id="eq-forca-restauradora"><span class="math display">\[
-  F_R = - m g \text{ sen } \theta
+  P_\perp = - m g \text{ sen } \theta
 \tag{1}\]</span></span></p>
-<p>Como essa força não é diretamente proporcional ao deslocamento angular (<span class="math inline">\(\theta\)</span>), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação (<span class="math inline">\(\text{sen }\theta\approx\theta\)</span>)<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, com (<span class="math inline">\(\theta\)</span>) expresso em radianos. Nesse caso,</p>
+<p>Como essa força não é diretamente proporcional ao deslocamento angular (<span class="math inline">\(\theta\)</span>), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <span class="math inline">\(\text{sen }\theta\approx\theta\)</span>, com <span class="math inline">\(\theta\)</span> expresso em radianos. Nesse caso,</p>
 <p><span class="math display">\[
-F_r = -mg \theta
+P_\perp = -mg \theta
 \]</span></p>
 <p>Aplicando a Segunda Lei de Newtone considerando que a aceleração tangencial está relacionada à aceleração angular por <span class="math inline">\(a = l \alpha\)</span>, obtém-se:</p>
 <p><span class="math display">\[
@@ -205,20 +223,6 @@ m l \alpha = -mg \theta \Rightarrow \alpha = -\dfrac{g}{l} \theta
 \tag{4}\]</span></span></p>
 <p>Essa expressão é válida para pequenas amplitudes e mostra que, nessas condições, o período depende do comprimento do pêndulo e da aceleração da gravidade, mas não depende da massa do corpo oscilante.</p>
 <p>Neste experimento, será investigada a dependência do período de oscilação <span class="math inline">\(T\)</span> com o comprimento <span class="math inline">\(l\)</span> do pêndulo.</p>
-<p>Por exemplo, a <a href="#fig-labfis-logo" class="quarto-xref">Figura&nbsp;1</a> mostra o logo do Laboratório de Física.</p>
-<div id="fig-labfis-logo" class="quarto-float quarto-figure quarto-figure-center">
-<figure class="quarto-float quarto-float-fig figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figura&nbsp;1: Logo do Labfis
-</figcaption>
-<div aria-describedby="fig-labfis-logo-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="assets/images/labfis-logo-transparente.png" class="img-fluid figure-img" style="width:50.0%">
-</div>
-</figure>
-</div>
-<div style="text-align: center; font-size: smaller;">
-<p><strong>Fonte:</strong> Labfis (2026)</p>
-</div>
 </section>
 <section id="objetivos" class="level2">
 <h2 data-anchor-id="objetivos">Objetivos</h2>
@@ -323,7 +327,7 @@ Figura&nbsp;1: Logo do Labfis
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/uftlabfis\.github\.io\/roteiro-f2-pendulo-simples\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
