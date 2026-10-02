@@ -7,7 +7,7 @@ author:
 date: today
 columns: 2 # 👈 Mantido aqui (específico para a diagramação deste PDF)
 abstract: ""
-url: "https://github.com/uftlabfis"
+url: "https://uftlabfis.github.io/roteiro-f2-pendulo-simples/"
 bibliography: assets/references/references.bib
 
 format:
@@ -59,7 +59,7 @@ $$
   P_\perp = - m g \text{ sen } \theta
 $${#eq-forca-restauradora}
 
-Como essa força não é diretamente proporcional ao deslocamento angular ($\theta$), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação[^aproximacao-theta] $\text{sen }\theta\approx\theta$, com $\theta$ expresso em radianos. Nesse caso,
+Como essa força não é diretamente proporcional ao deslocamento angular ($\theta$), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação $\text{sen }\theta\approx\theta$, com $\theta$ expresso em radianos[^aproximacao-theta]. Nesse caso,
 
 $$
 P_\perp = -mg \theta
@@ -145,7 +145,7 @@ Conforme #cite(<Halliday2>, form: "prose"), o pêndulo simples é um sistema fun
 )<fig-pendulo>
 #align(center)[#text(size: 10pt)[Fonte: Labfis (2026)]]
 
-Uma massa puntiforme $m$ é suspensa por um fio de comprimento $l$, inextensível e de massa desprezível (ver @fig-pendulo). Durante a oscilação, atuam sobre ela a força peso $arrow(P)$ e a tensão $T$ do fio. A força peso pode ser decomposta em componentes tangencial e radial: a primeira é responsável pelo movimento oscilatório, enquanto a segunda contribui para a aceleração centrípeta da massa#footnote[A aceleração centrípeta é a aceleração que mantém um corpo em movimento circular, direcionada para o centro da trajetória. #nonum($ T - m g "cos" theta = (m v^2)/2 $)].
+Uma massa puntiforme $m$ é suspensa por um fio de comprimento $l$, inextensível e de massa desprezível (ver @fig-pendulo). Durante a oscilação, atuam sobre ela a força peso $arrow(P)$ e a tensão $T$ do fio. A força peso pode ser decomposta em componentes tangencial e radial: a primeira é responsável pelo movimento oscilatório, enquanto a segunda contribui para a aceleração centrípeta da massa#footnote[ A aceleração centrípeta é a aceleração que mantém um corpo em movimento circular, direcionada para o centro da trajetória. #nonum($ T - m g "cos" theta = (m v^2)/2 $)].
 
 // Seja uma massa $m$, considerada puntiforme, suspensa por um fio de comprimento ($l$), inextensível e de massa desprezível. Durante a oscilação, observamos duas forças atuando sobre a massa $m$: a força peso ($arrow(P)$) e a força de tensão ($T$) do fio. A força peso pode ser decomposta em duas componentes: uma tangencial à trajetória da massa, responsável por gerar o movimento oscilatório, e outra radial, que atua na direção do fio. A componente radial contribui para a aceleração centrípeta da massa#footnote[A aceleração centrípeta é a aceleração que mantém um corpo em movimento circular, direcionada para o centro da trajetória.
 
@@ -158,7 +158,7 @@ $
   P_perp = -m g "sen" theta
 $
 
-Como essa força não é diretamente proporcional ao deslocamento angular ($theta$), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação#footnote[Para $theta approx 15°$, o diferença percentual entre o ângulo $theta$ (em rad) e $"sen" theta$ é aproximadamente igual a $1,1 %$] $"sen" theta approx theta$, com $theta$ expresso em radianos. Nesse caso,
+Como essa força não é diretamente proporcional ao deslocamento angular ($theta$), o movimento do pêndulo não é, em geral, um movimento harmônico simples. Entretanto, para pequenas amplitudes de oscilação, pode-se utilizar a aproximação $"sen" theta approx theta$, com $theta$ expresso em radianos#footnote[Para $theta approx 15°$, o diferença percentual entre o ângulo $theta$ (em rad) e $"sen" theta$ é aproximadamente igual a $1,1 %$]. Nesse caso,
 
 $
 P_perp = -m g theta
