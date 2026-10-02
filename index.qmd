@@ -24,10 +24,10 @@ other-links:
     href: https://raw.githubusercontent.com/uftlabfis/uftlabfis-uftlabfis-roteiros/main/instrumentacao/papel-milimetrado-18x22.pdf
     icon: file-earmark-pdf
     target: "_blank"
-  - text: Roteiro do prof. Heverton
-    href: assets/alternatives/pendulo-simples-prof-heverton.pdf
-    icon: file-earmark-pdf
-    target: "_blank"
+  # - text: Roteiro do prof. Heverton
+  #   href: assets/alternatives/pendulo-simples-prof-heverton.pdf
+  #   icon: file-earmark-pdf
+  #   target: "_blank"
   # - text: Repositório no GitHub
   #   href: https://github.com/uftlabfis
   #   icon: github
