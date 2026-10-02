@@ -23,7 +23,7 @@
   // Suporte
   wall(((-2, 0), (2, 0), (2, .5), (-2, .5)), stroke-style: 1pt + black, sides: (0,))
 
-  line((0, 0), (0, -5), stroke: (dash: "dashed", paint: gray))
+  line((0, 0), (0, -5), stroke: (dash: "dashed"))
 
 
 
